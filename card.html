@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .weather-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .weather-card h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .temp {
+            font-size: 50px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .icon {
+            font-size: 60px;
+            margin: 10px 0;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .info-row div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .info-row span {
+            font-size: 12px;
+            color: #555;
+        }
+
+        .weather-card .additional-info {
+            font-size: 12px;
+            margin-top: 10px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="weather-card">
+        <h2>City Name</h2>
+        <div class="temp">25°C</div>
+        <div class="icon">☀️</div> 
+        
+        <div class="info-row">
+            <div>
+                <span>Humidity</span>
+                <span>60%</span>
+            </div>
+            <div>
+                <span>Pressure</span>
+                <span>1013 hPa</span>
+            </div>
+            <div>
+                <span>Wind</span>
+                <span>15 km/h</span>
+            </div>
+        </div>
+
+        <div class="additional-info">
+            <p>Feels like: 23°C</p>
+            <p>Sunset: 7:30 PM</p>
+        </div>
+    </div>
+
+</body>
+</html>
