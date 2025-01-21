@@ -96,59 +96,34 @@
             cursor: pointer;
             background-color: #ddd;
             border-radius: 30px;
-            width: 220px;  /* Wider to accommodate both labels */
-            padding: 5px;
+            padding: 5px 15px;
             transition: background-color 0.3s;
-            position: relative;
         }
 
-        /* Create a label for "Today" and "Tomorrow" */
         .switch-label span {
-            font-size: 20px;
+            font-size: 14px;
             color: #333;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 30px;
-            height: 30px;
-            text-align: center;
-            transition: color 0.3s;
-        }
-
-        .switch-label span:first-child {
-            left: 0;
-        }
-
-        .switch-label span:last-child {
-            right: 0;
-        }
-
-        /* The sliding toggle circle */
-        .switch-toggle {
-            width: 50px;
-            height: 30px;
-            background-color: #fff;
-            border-radius: 50px;
-            position: absolute;
-            top: 3px;
-            left: 3px;
-            transition: transform 0.3s, background-color 0.3s;
+            padding: 0 10px;
         }
 
         .switch-container input:checked + .switch-label {
-            background-color: #4CAF50;  /* Change to green when checked */
+            background-color: #4CAF50;
+        }
+
+        .switch-container input:checked + .switch-label span {
+            color: #fff;
         }
 
         .switch-container input:checked + .switch-label .switch-toggle {
-            transform: translateX(100px);  /* Moves the circle to the right */
+            transform: translateX(20px);
         }
 
-        .switch-container input:checked + .switch-label span:first-child {
-            color: #fff;  /* "Today" turns white when active */
-        }
-
-        .switch-container input:checked + .switch-label span:last-child {
-            color: #fff;  /* "Tomorrow" turns white when active */
+        .switch-toggle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #fff;
+            transition: transform 0.3s;
         }
 
     </style>
